@@ -1,0 +1,2 @@
+FROM registry.access.redhat.com/ubi9/ubi:9.4
+RUN dnf upgrade -y && dnf install -y rust cargo
