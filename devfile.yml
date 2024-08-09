@@ -26,12 +26,12 @@ components:
           protocol: https
       image: quay.io/rh_ee_fcharett/rust-toolset:1.0.0
       args: ["tail", "-f", "/dev/null"]
-      memoryLimit: 1024Mi
+      memoryLimit: 2048Mi
       mountSources: true
     name: runtime
 commands:
   - exec:
-      commandLine: cargo build --release
+      commandLine: cargo build
       component: runtime
       env:
        - name: CARGO_HOME
