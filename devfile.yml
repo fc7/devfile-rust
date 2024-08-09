@@ -42,7 +42,7 @@ commands:
       workingDir: ${PROJECT_SOURCE}
     id: build
   - exec:
-      commandLine: ./target/debug/rust-hello
+      commandLine: cargo run
       component: runtime
       group:
         isDefault: true
