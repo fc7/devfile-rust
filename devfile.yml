@@ -42,7 +42,7 @@ commands:
       workingDir: ${PROJECT_SOURCE}
     id: build
   - exec:
-      commandLine: ./target/release/rust-hello
+      commandLine: ./target/debug/rust-hello
       component: runtime
       group:
         isDefault: true
